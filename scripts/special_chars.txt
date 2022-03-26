@@ -1,0 +1,17 @@
+á='
+é=&
+í=;
+ó=#
+ú=~
+ñ=@
+¡=- ($7E in menu)
+¿=\ ($7F in menu)
+
+D6= holy
+D8= bolt
+D9= wind
+DA= earth
+DB= ice
+DC= fire
+DD= water
+DE= dark
