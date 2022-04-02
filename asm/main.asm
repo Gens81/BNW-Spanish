@@ -30,6 +30,7 @@ incsrc "item.asm"
 incsrc "rare.asm"
 incsrc "names.asm"
 incsrc "ending.asm"
+incsrc "new_intro.asm"
 incsrc "random_off.asm"
 ;incsrc "random_on.asm"
 

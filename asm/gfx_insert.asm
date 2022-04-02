@@ -8,5 +8,9 @@ hirom
 org $C47FC0
 	incbin "../gfx/modified/047FC0_menu_font.bin" 	;Font and Sap_Regen_Rerise
 
+;------------------------------------------------------------------
+;THE END gfx
+;------------------------------------------------------------------
 
-	
+org $E96300
+	incbin "../gfx/modified/296300_The_End.bin"
