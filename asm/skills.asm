@@ -252,6 +252,8 @@ org $C3526B
 	sta $f1			;Store in
 
 ;Blue MAgic Battle Menu
+org $C16660
+	lda #$0b			;Set delete tile length
 org $C16665
 	lda #$0b			;Set String Length
 org $C16670
