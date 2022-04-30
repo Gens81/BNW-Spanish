@@ -14,7 +14,7 @@ hirom
 
 ;change this to where the palette data should be stored (takes up about 0x200 bytes)
 org $F00300
-incbin gfx/intro/intro_esp.col
+incbin gfx/intro/FFVI_esp.col
 
 ;essentially the same as the above org, only the bank and the offset are separated
 !ColBank = #$F0
@@ -22,7 +22,7 @@ incbin gfx/intro/intro_esp.col
 
 ;change this to the desired location of the tilemap (takes up about 0x800 bytes)
 org $F00500
-incbin gfx/intro/intro_esp.map
+incbin gfx/intro/FFVI_esp.map
 
 ;essentially the same as the above org, only the bank and the offset are separated
 !MapBank = #$F0
@@ -30,7 +30,7 @@ incbin gfx/intro/intro_esp.map
 
 ;change this org to the offset of the raw image data (bitplane data)
 org $F01000
-incbin gfx/intro/intro_esp.set
+incbin gfx/intro/FFVI_esp.set
 
 ;essentially the same as the above org, only the bank and the offset are separated
 !SetBank = #$F0 ;(the raw image data takes up two banks)
