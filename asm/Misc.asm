@@ -219,7 +219,12 @@ org $C3B33F
 org $C3B40F
 	db $17,$7d,"Elige quien lucha",$00
 
-warnpc $C3B426
+;Moving the challenger data
+org $c3aefa
+	ldy #$7c51
+
+org $C3B427
+	db $cd,$78,"?????????????",$00
 
 ;Fix gradient scale
 
