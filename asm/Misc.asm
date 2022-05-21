@@ -204,36 +204,9 @@ org $C3AD9A
 select_an_item:
 	db $23,$79,"Elige un objeto",$00
 
-;Change words position
-org $C3B251
-	db $EB,$78		;Right item
-org $C3B261
-	db $CD,$78		;Left item
-
-;Change box dimension
-org $C3B33F
-	db $8b,$58,$0d,$01	;Left Item
-	db $a9,$58,$0d,$01	;Right Item
-
 ;Choose the challenger data
+
 org $C3B40F
 	db $17,$7d,"Elige quien lucha",$00
 
-;Moving the challenger data
-org $c3aefa
-	ldy #$7c51
-
-org $C3B427
-	db $cd,$78,"?????????????",$00
-
-;Fix gradient scale
-
-org $D4CB42
-;upper side
-	dw $e001,$e702,$e603,$e503,$e403,$e302,$e203,$e103
-	dw $e003,$e102,$e201,$e301,$e401,$e501,$e601,$e701
-
-;bottom side
-	dw $e070,$ea01,$e903,$e804,$e704,$e604,$e504,$e404
-	dw $e304,$e204,$e104,$e004,$e104,$e204,$e304,$e404
-	dw $e504,$e604,$e704,$e804,$e904,$ea02
+warnpc $C3B426

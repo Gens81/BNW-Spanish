@@ -30,14 +30,6 @@ org $CEFBA0
 	db "Collar       "
 	
 warnpc $CEFCAF
-
-;Hide rare counter item and expand description box
-
-org $c3837f 
-    ldx #$7ac5        ;Set rare item conunter out of bounds and hide it
-    
-org $c38e4a
-    db $bf,$7a,$00    ;$00 should deny 3 blank tiles print and allow description text to show up
 	
 ;------------------------------------------------------------------
 ;Rare items descriptions

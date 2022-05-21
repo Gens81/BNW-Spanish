@@ -330,8 +330,3 @@ org $C3386C
 	dw $9160	;Cursor cursor
 	dw $A160	;B button cursor
 	dw $B160	;Controller cursor
-
-;Brave New World data
-org $C33BB8
-	db $d1,$78,"Espa@ol Nuevo Mundo 2.1",$00
-	

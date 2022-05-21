@@ -196,14 +196,7 @@ org $C3FA16
 
 org $C3FA1E
 	dw #shopquestionmarks
-	
-org $C3FA9A
-	LDY #shop0attack		;Hyphens only for the item shop pointer
-	JSR $02f9				;Subroutine that print letter
-	LDY #shop0defense		;Hyphens only for the item shop pointer
-	JSR $02f9
-	LDY #shop0mdefense		;Hyphens only for the item shop pointer
-	JSR $02f9
+
 
 ;Text data
 
@@ -269,39 +262,6 @@ itemweakness:
 padbyte $ff
 pad $C3FC1F
 warnpc $C3FC1F
-
-;new data in new bank
-
-org $C3FE30
-shop0attack:
-	db $43,$81,"0",$00		;0 set instead of - in the item shop
-shop0defense:
-	db $43,$82,"0",$00		;0 set instead of - in the item shop
-shop0mdefense:
-	db $43,$83,"0",$00		;0 set instead of - in the item shop
-	
-;Stats value
-
-org $C3F972
-	db $23,$83	;Speed value
-
-org $C3F987
-	db $a3,$83	;Stamina value
-
-org $C3F9A1
-	db $a3,$82	;Magic value
-	
-org $C3FA29
-	db $bf,$82	;Evade value
-	
-org $C3FA44
-	db $bf,$83	;M.Evade
-
-org $C3F9CE
-	db $3f,$82	;Defense value
-
-org $C3F9DE
-	db $3f,$83	;M.Defense Value
 
 	
 ;Buy_Sell_Exit Cursor value	
